@@ -14,7 +14,7 @@ router.post('/signup',(req,res)=>{
     if(!email || !password || !name){
         res.status(422).json({error:"please add all details"})
     }
-    User.findOne({})
+    User.findOne()
 
 });
 
