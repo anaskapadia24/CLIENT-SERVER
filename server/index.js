@@ -6,7 +6,10 @@ import router from './routes/auth.js';
 import './models/user.js';
 
 const app = express(); //THE WHOLE SERVER
-const PORT = 5000; //the port 5000 will work for database
+const PORT = 5000; 
+app.use(express.json());
+
+//the port 5000 will work for database
 // MIDDLEWARE CORS BODY PARSER
 //Middileware is the function that invoke by express routing layer becasue we are using express using app
 
